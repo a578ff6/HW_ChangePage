@@ -22,6 +22,7 @@
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="J5d-qs-bp4" appends="YES" id="Xma-YI-xgm"/>
                                     <outletCollection property="gestureRecognizers" destination="cUx-ud-Co0" appends="YES" id="ByB-Ud-3U8"/>
+                                    <outletCollection property="gestureRecognizers" destination="aKk-1t-98Z" appends="YES" id="JdD-Fd-QCL"/>
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSC-gV-li4" userLabel="NextPageButton">
@@ -102,6 +103,11 @@
                         <action selector="goToNextPage:" destination="BYZ-38-t0r" id="zEK-X3-ytF"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="1" id="aKk-1t-98Z">
+                    <connections>
+                        <action selector="changeImageOnLongPress:" destination="BYZ-38-t0r" id="nYb-tD-3H5"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="81.679389312977094" y="3.5211267605633805"/>
         </scene>
